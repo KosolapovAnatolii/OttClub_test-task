@@ -1,13 +1,25 @@
 .container {
   margin: 0 auto;
-  max-width: 1020px;
-  padding: 0 20px;
+  max-width: 320px;
+  padding: 0 16px;
+
+  @include onPhone {
+    max-width: 375px;
+    padding: 0 16px;
+  }
 
   @include onTablet {
-    padding: 0 72px;
+    max-width: 768px;
+    padding: 0 46px;
   }
 
   @include onDescktop {
-    padding: 0 120px;
+    max-width: 990px;
+    padding: 0 48px;
+  }
+
+  @include onTV {
+    max-width: 1920px;
+    padding: 0 229px;
   }
 }

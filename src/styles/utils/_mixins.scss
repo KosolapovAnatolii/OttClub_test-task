@@ -5,14 +5,26 @@
   }
 }
 
+@mixin onPhone {
+  @media (min-width: 375px) {
+    @content;
+  }
+}
+
 @mixin onTablet {
-  @media (min-width: 744px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
 
 @mixin onDescktop {
-  @media (min-width: 1264px) {
+  @media (min-width: 990px) {
+    @content;
+  }
+}
+
+@mixin onTV {
+  @media (min-width: 1920px) {
     @content;
   }
 }

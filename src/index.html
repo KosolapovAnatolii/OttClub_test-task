@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MyBike</title>
-    <link rel="icon" href="images/favicon.png">
+    <title>OTT Club</title>
+    <link rel="icon" href="images/Logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
@@ -19,326 +19,506 @@
   <body class="page__body">
     <header class="header">
       <div class="container">
-        <div class="header__content">
-          <div class="top-actions">
-            <a href="#" class="logo">
-              <img
-                class="logo__image"
-                src="./images/MyBiKE.png"
-                alt="MyBiKE"
-              >
+        <div class="grid grid--phone grid--tablet">
+          <a 
+            href="#" 
+            class="header__logo grid__item--1-1 grid__item--phone-1-1 grid__item--tablet-1-1"
+          >
+            <img
+              class="logo__image"
+              src="./images/Logo.png"
+              alt="OTTClub"
+            >
+          </a>
+
+          <div class="header__social grid__item--tablet-4-5 for-tablet">
+            <a 
+              href="https://web.telegram.org"
+            >
+              <img src="./images/Telegram.png" alt="Telegram">
             </a>
 
-            <a href="tel:+1 234 555-55-55" class="icon icon--phone header__call"></a>
-
-            <a href="#menu" class="icon icon--menu"></a>
+            <a 
+              href="https://www.facebook.com"
+            >
+              <img src="./images/Facebook.png" alt="Facebook">
+            </a>
           </div>
-          <h1 class="header__title">Take the Streets</h1>
+
+          <div class="header__auth grid__item--2-2 grid__item--phone-3-4 grid__item--tablet-5-8">
+            <a 
+              href="#"
+              class="header__auth--button for-tablet">
+              Регистрация
+            </a>
+
+            <a 
+              href="#"
+              class="header__auth--button"
+            >
+              Войти
+            </a>
+          </div>
+
+          <h1 class="header__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">Более 270 телеканалов в прямомэфире</h1>
+          <img 
+            src="./images/HeaderPicture.png" 
+            alt="main-picture" 
+            class="header__image grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8"
+          >
+          <p class="header__description grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+            Национальные, познавательные, детские, кино, спортивные, новостные и многие другие каналы
+          </p>
+          <a 
+            href="#" 
+            class="header__button button grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4"
+          >
+            Протестировать 7 дней бесплатно
+          </a>
+          <div class="header__benefits benefits for-tablet grid__item--tablet-1-7">
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Present.png" 
+                  alt="presents"
+                >
+                <span class="benefits__item--title">
+                  Бесплатный тест
+                </span>
+              </li>
+
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Gadgets.png" 
+                  alt="gadgets"
+                >
+                <span class="benefits__item--title">
+                  5 устройств = 1 подписка
+                </span>
+              </li>
+
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Archiv.png" 
+                  alt="archiv"
+                >
+                <span class="benefits__item--title">
+                  Архив трансляций
+                </span>
+              </li>
+
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Planet.png" 
+                  alt="planet"
+                >
+                <span class="benefits__item--title">
+                  Без привязки к месту
+                </span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
     </header>
 
-    <nav class="page__menu menu" id="menu">
-      <div class="container">
-        <div class="menu__content">
-          <div class="menu__top top-actions">
-            <a href="#" class="logo">
-              <img
-                class="logo__image"
-                src="./images/MyBiKE_black.png"
-                alt="MyBiKE"
-              >
-            </a>
-
-            <div></div>
-
-            <a href="#" class="icon icon--cross"></a>
-          </div>
-
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="#" class="menu__link">Home</a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#about-us" class="menu__link">About us</a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#compare-bikes" class="menu__link">Compare Bikes</a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#details" class="menu__link">Details</a>
-            </li>
-
-            <li class="menu__item">
-              <a href="#contacts" class="menu__link">Contacts</a>
-            </li>
-
-
-          </ul>
-
-          <a
-            href="tel:+1 234 5555-55-55"
-            class="menu__call menu__call--phone"
-          >
-            +1 234 5555-55-55
-          </a>
-
-          <a
-            href="tel:+1 234 5555-55-55"
-            class="menu__call menu__call--action"
-          >
-            Book a test ride
-          </a>
-        </div>
-      </div>
-    </nav>
-
     <main>
-      <h1 class="page__title" hidden>MyBiKE</h1>
-      <section class="page__section" id="about-us">
+      <h1 class="page__title" hidden>OTT Club</h1>
+      <section class="page__section-connection">
         <div class="container">
-          <div class="grid grid--tablet grid--descktop">
-            <h2 class="page__section-title grid__item--1-1 grid__item--tablet-1-3 grid__item--descktop-1-4">Move Free</h2>
-            <p class="page__section-text grid__item--1-2 grid__item--tablet-4-6 grid__item--descktop-6-11">
-              Shift your ride, not gears. Find the fastest way to move in the city as the bike adapts intuitively to power the speed you need.
+          <div class="connection grid grid--phone grid--tablet">
+            <img 
+              src="./images/eye.png" 
+              alt="eye"
+              class="connection__image grid__item--1-2 grid__item--phone-2-3 grid__item--tablet-4-5"
+            >
+            <div class="connection__title grid__item--1-2 grid__item--phone-2-3 grid__item--tablet-2-4">
+              <div class="connection__price">
+                <img src="./images/1€.png" alt="1euro" class="connection__price--amount">
+                <span class="connection__price--month">
+                / месяц
+                </span>
+              </div>
+              <p class="connection__about">
+                Покупая подписку, более чем на 6 месяцев
+              </p>
+            </div>
+            <ul class="connection__achivs grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-7">
+              <li class="connection__item">
+                Более 270 каналов
+              </li>
+              <li class="connection__item">
+                127 FullHD каналов
+              </li>
+              <li class="connection__item">
+                Режим Ultra TV Sport
+              </li>
+              <li class="connection__item">
+                7 дней архива каналов
+              </li>
+              <li class="connection__item">
+                5 устройств = 1 подписка
+              </li>
+            </ul>
+            <from 
+              class="connection__form grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-2-7" 
+              action="#"
+              id="connection-form"
+            >
+              <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              class="connection__input"
+              required
+              >
+              <button class="connection__button">
+                Подключить тариф
+              </button>
+            </from>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section-channels">
+        <div class="container">
+          <div class="channels grid grid--phone grid--tablet">
+            <h3 
+              class="channels__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3">
+              ТВ - каналы
+            </h3>
+            <span
+              class="channels__description grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-5"
+            >
+              Национальные, познавательные, детские, кино, спортивные, новостыне и многие другие каналы
+            </span>
+            <div class="channels__filter grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-8">
+              <button
+                class="channels__button"
+              >
+                Популярные
+              </button>
+              <button
+                class="channels__button"
+              >
+                Национальные
+              </button>
+              <button
+                class="channels__button for-tablet"
+              >
+                Познавательные
+              </button>
+              <button
+                class="channels__button for-tablet"
+              >
+                Кино
+              </button>
+              <button
+                class="channels__button for-tablet"
+              >
+                Спорт
+              </button>
+              <button
+                class="channels__button for-descktop"
+              >
+                Детские
+              </button>
+              <button
+                class="channels__button for-descktop"
+              >
+                Музыкальыне
+              </button>
+              <button
+                class="channels__button for-tv"
+              >
+                Новостные
+              </button>
+            </div>
+            <div class="channels__row grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-8">
+              <div class="channels__column">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/1+1.png" 
+                  alt="1+1">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/inter.png" 
+                  alt="inter"
+                >
+              </div>
+  
+              <div class="channels__column">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/zoom.png" 
+                  alt="zoom"
+                >
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/noviy.png" 
+                  alt="noviy"
+                >
+              </div>
+                
+              <div class="channels__column">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/ukraine.png" 
+                  alt="ukraine"
+                >
+                <img
+                  class="channels__item"
+                  src="./images/cards/ictv.png" 
+                  alt="ictv"
+                >
+              </div>
+  
+              <div class="channels__column for-tablet">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/film.png" 
+                  alt="e-film"
+                >
+  
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/m1.png" 
+                  alt="m1"
+                >
+              </div>
+  
+              <div class="channels__column for-descktop">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/tet.png" 
+                  alt="tet"
+                >
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/2+2.png" 
+                  alt="2+2"
+                >
+              </div>
+            </div>
+            <a href="#" class="channels__show-link grid__item--1-2 grid__item--phone-3-4 grid__item--tablet-7-8">
+              показать все
+              <img src="./images/arrow.svg" alt="show more channels">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section-devises">
+        <div class="container">
+          <div class="devises grid grid--phone grid--tablet">
+            <h3 
+              class="devises__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3"
+            >
+              Смотрите на разных устройствах
+            </h3>
+            <p 
+              class="devises__description grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3"
+            >
+              Подключите подписку FULL и смотрите любимые каналы на 5 устройствах, среди которых: телевизор, компьютер, планшет или смартфон
             </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="page__section" id="compare-bikes">
-        <div class="container">
-          <div class="grid grid--center grid--tablet grid--descktop">
-            <h2 class="page__section-title grid__item--1-2 grid__item--tablet-2-5 grid__item--descktop-4-9">Compare bikes</h2>
-            <div class="card grid__item--1-2 grid__item--tablet-2-5 grid__item--descktop-1-4">
-              <img
-                src="./images/Sporty_4.jpg"
-                alt="Sporty 4"
-                class="card__picture"
+            <img 
+              src="./images/Devices.png" 
+              alt="Devises" 
+              class="devises__image grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8"
+            >
+            <button class="devises__button button grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3">
+              Протестировать 7 дней бесплатно
+            </button>
+            <div class="devises__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+              <img 
+                src="./images/devises/Lg.png" 
+                alt="LG" 
+                class="devises__item"
               >
-              <h3 class="card__name">Sporty 4</h3>
-              <p class="card__text">The iconic frame brought to a new performance height as a sporty, active ride.</p>
-              <span class="card__price">$ 2 590</span>
+
+              <img 
+                src="./images/devises/iOS.png"
+                alt="iOS"
+                class="devises__item"
+              >
             </div>
 
-            <div class="card grid__item--1-2 grid__item--tablet-2-5 grid__item--descktop-5-8">
-              <img
-                src="./images/Ride_in_town_ST.jpg"
-                alt="Ride in town ST"
-                class="card__picture"
+            <div class="devises__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8">
+              <img 
+                src="./images/devises/Android TV.png"
+                alt="Android"
+                class="devises__item"
               >
-              <h3 class="card__name">Ride in town ST</h3>
-              <p class="card__text">An open frame for an upright riding position as the most comfortable ride in town.</p>
-              <span class="card__price">$ 2 590</span>
-            </div>
 
-            <div class="card grid__item--1-2 grid__item--tablet-2-5 grid__item--descktop-9-12">
-              <img
-                src="./images/Agile_ride_3.jpg"
-                alt="Agile ride 3"
-                class="card__picture"
+              <img 
+                src="./images/devises/Samsung.png"
+                alt="Samsung"
+                class="devises__item"
               >
-              <h3 class="card__name">Agile ride 3</h3>
-              <p class="card__text">The lightweight frame that has earned its street tread as a sleek, agile ride.</p>
-              <span class="card__price">$ 2 090</span>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="page__section" id="details">
+      <section class="page__section-questions">
         <div class="container">
-          <div class="grid grid--tablet grid--descktop">
-            <h2 class="page__section-title grid__item--1-2 grid__item--tablet-2-5 grid__item--descktop-4-9">The Details</h2>
-          </div>
-          <div class="place">
-            <div class="place__photos">
-              <div class="grid">
-                <div class="grid__item--1-1 grid__item--tablet-1-4 grid__item--descktop-1-8 ">
-                  <div class="place__photo-container">
-                    <img
-                      src="./images/photos/image1.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
-                <div class=" grid__item--2-2 grid__item--tablet-5-6 grid__item--descktop-9-12 ">
-                  <div class="place__photo-container">
-                    <img
-                      src="./images/photos/image 2.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid">
-              <div class="grid__item--1-1 grid__item--tablet-1-2 grid__item--descktop-1-2">
-                <h3 class="place__title">
-                  Auto Unlock
-                </h3>
-              </div>
-              <div class="grid__item--1-2 grid__item--tablet-1-6 grid__item--descktop-1-8">
-                <p class="place__text">
-                  The app senses when you're nearby to unlock automatically. GPS tracking so you know where your bike is and can track it anytime.
+          <div class="questions grid grid--phone grid--tablet">
+            <h3 class="questions__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+              Популярные вопросы
+            </h3>
+            <div class="questions__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Как подключить подписку OTTCLUB или продлить её?
                 </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
               </div>
-            </div>
-          </div>
-
-          <div class="place">
-            <div class="place__photos">
-              <div class="grid">
-                <div class="grid__item--1-1 grid__item--tablet-1-4 grid__item--descktop-1-8 ">
-                  <div class="place__photo-container">
-                    <img
-                      src="./images/photos/image 3.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
-                <div class=" grid__item--2-2 grid__item--tablet-5-6 grid__item--descktop-9-12 ">
-                  <div class="place__photo-container">
-                    <img
-                      src="./images/photos/image 4.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid">
-              <div class="grid__item--1-2 grid__item--tablet-1-4 grid__item--descktop-1-4">
-                <h3 class="place__title">
-                  Range & Integrated lights
-                </h3>
-              </div>
-              <div class="grid__item--1-2 grid__item--tablet-1-6 grid__item--descktop-1-8">
-                <p class="place__text">
-                  The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Как смотреть одновременно на разных устройствах?
                 </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
               </div>
-            </div>
-          </div>
-
-          <div class="place">
-            <div class="place__photos">
-              <div class="grid">
-                <div class="grid__item--1-1 grid__item--tablet-1-2 grid__item--descktop-1-4 ">
-                  <div class="place__photo-container">
-                    <img
-                      src="./images/photos/image 5.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
-                <div class=" grid__item--2-2 grid__item--tablet-3-6 grid__item--descktop-5-12 ">
-                  <div class="place__photo-container">
-                    <img
-                      src="./images/photos/image 6.jpg"
-                      alt="Place 1"
-                      class="place__photo"
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="grid">
-              <div class="grid__item--1-2 grid__item--tablet-1-5 grid__item--descktop-1-6">
-                <h3 class="place__title">
-                  Hydraulic disc brakes & Lightweight
-                </h3>
-              </div>
-              <div class="grid__item--1-2 grid__item--tablet-1-6 grid__item--descktop-1-8">
-                <p class="place__text">
-                  Brakes with total stopping power the second you make contact. The removable battery has up to 70km battery autonomy and weighs only 2.4 kg. Lights integrated into the frame give you always-on visibility day and night.
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Какая скорость соединения необходима для просмотра каналов?
                 </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
               </div>
+              <hr class="questions__divider to-tablet">
             </div>
-          </div>
-          <div class="grid grid--tablet grid--descktop">
-            <div class="grid__item--1-2 grid__item--tablet-2-5 grid__item--descktop-5-8">
-              <a href="#" class="page__section-button button">Explore</a>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <section class="page__section contacts" id="contacts">
-        <div class="container">
-          <h2 class="contacts__title">Contact us</h2>
-          <div class="grid grid--tablet grid--descktop">
-            <div class="grid__item--1-2 grid__item--tablet-1-3 grid__item--descktop-1-5">
-              <form
-                action="#"
-                class="contacts__form"
-                id="contacts-form"
-              >
-                <input
-                  name="name"
-                  type="text"
-                  placeholder="Name"
-                  class="contacts__form-input"
-                  required
+            <div class="questions__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8">
+              <div class="questions__item ">
+                <p class="questions__text">
+                  Как смотреть на телевизре Samsung?
+                </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
                 >
-                <input
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  class="contacts__form-input"
-                  required
-                >
-                <textarea
-                  name="message"
-                  placeholder="Message"
-                  class="contacts__form-textarea"
-                  required
-                ></textarea>
-                <button class="button contacts__form-button">Send</button>
-              </form>
-            </div>
-            <div class="grid__item--1-2 grid__item--tablet-4-5 grid__item--descktop-8-10">
-              <div class="contacts__info">
-                <div class="contacts__info-title">
-                  Phone
-                </div>
-                <a href="tel:+1 234 5555-55-55" class="contacts__info-link">
-                  +1 234 5555-55-55
-                </a>
-                <div class="contacts__info-title">
-                  Email
-                </div>
-                <a href="mailto:hello@miami.com" class="contacts__info-link">
-                  hello@miami.com
-                </a>
-                <div class="contacts__info-title">
-                  Email
-                </div>
-                <a
-                  href="https://goo.gl/maps/S3CwBf1iSqWzwV579"
-                  class="contacts__info-link"
-                  target="_blank"
-                >
-                  400 first ave.<br>suite 700<br>Minneapolis, MN 55401
-                </a>
               </div>
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">Как посмотреть передачу, которая была в эфире ранее?</p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Как работает бесплатный тестовый период?
+                </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider to-tablet">
             </div>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="page__footer footer">
+      <div class="container">
+        <div class="grid grid--phone grid--tablet">
+          <div class="footer__about-first grid__item--1-2 grid__item--phone-1-2 grid__item--tablet-1-2">
+            <a href="#" class="footer__link">О нас</a>
+            <a href="#" class="footer__link">Пользовательское соглашение</a>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+            <a href="#" class="footer__link">ТВ каналам</a>
+          </div>
 
+          <div class="footer__about-second grid__item--1-2 grid__item--phone-3-4 grid__item--tablet-4-5">
+            <a href="#" class="footer__link">Проверка скорости</a>
+            <a href="#" class="footer__link">Правила оформления подписки</a>
+          </div>
+
+          <div class="footer__help grid__item--1-2 grid__item--phone-1-2 grid__item--tablet-6-8">
+            <h4 class="footer__help--title">Помощь</h4>
+            <span class="footer__help--contact">+442045772169 (Англия)</span>
+            <span class="footer__help--contact">+420255708953 (Европа)</span>
+            <span class="footer__help--contact">+97233751723 (Израиль)</span>
+            <span class="footer__help--contact">support@ottclub.cc</span>
+          </div>
+
+          <div class="footer__chat grid__item--1-2 grid__item--phone-3-4 grid__item--tablet-6-8">
+            <span class="footer__chat--title">Чат-поддержка</span>
+            <a href="#" class="footer__chan--link">
+              <img 
+                src="./images/messagers/logos_whatsapp.svg"
+                alt="whatsapp"
+              >
+            </a>
+            <a href="#" class="footer__chan--link">
+              <img
+                src="./images/messagers/logos_telegram.svg"
+                alt="telegram"
+              >
+            </a>
+          </div>
+          <div class="footer__payments grid-center grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-5">
+            <a href="#" class="footer__payments--link">
+              <img 
+                src="./images/payments/logos_visa.png"
+                alt="visa"
+              >
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img
+                src="./images/payments/master_card.png" alt="master-card">
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img
+                src="./images/payments/image640.png" 
+                alt="caska"
+              >
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img
+                src="./images/payments/373095 1.png"
+                alt="pay-sera"
+              >
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img 
+                src="./images/payments/sepa.png" 
+                alt="sepa"
+              >
+            </a>
+          </div>
+          <div class="footer__company grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8">
+            <span>2021-2022 COMPANY NAME</span>
+            <span>Company number 1221514</span>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
