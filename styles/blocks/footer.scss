@@ -1,0 +1,48 @@
+.footer {
+  padding-top: 48px;
+
+  &__about-second {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $colorText;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__help--title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+
+  &__help--contact {
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__help--contact {
+    color: $colorText;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+  }
+
+  &__chat--title {
+    color: $colorText;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    display: block;
+    margin-top: 16px;
+  }
+
+  &__company {
+    color: $colorText;
+  }
+}

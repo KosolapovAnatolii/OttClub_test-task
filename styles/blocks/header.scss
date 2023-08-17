@@ -1,0 +1,106 @@
+.header {
+  background: 
+    url(../images/Bats.png) bottom no-repeat,
+    url(../images/bg.png) center no-repeat,
+    linear-gradient(#2D152B, #221322);
+  background-size: cover;
+  padding: $headerTopPadding 0 22px;
+
+  &__social {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    grid-row: 1;
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+
+    @include onTablet {
+      grid-row: 1;
+    }
+  }
+
+  &__auth--button {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: $colorText;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 16px 32px;
+    border: 2px solid transparent;
+
+
+    &:hover {
+      border-radius: 4px;
+      border-color: #fff;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
+    text-align: center;
+    color: #fff;
+
+    @include onPhone {
+      font-size: 28px;
+    }
+
+    @include onTablet {
+      font-size: 32px;
+      text-align: left;
+      grid-row: 2 / 3;
+      padding-top: 48px;
+    }
+
+    @include onDescktop {
+      font-size: 38px;
+    }
+
+    @include onTV {
+      font-size: 56px;
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__image {
+    max-width: 100%;
+
+    @include onTablet {
+      grid-row: 2 / 7;
+    }
+
+    @include onTV {
+      grid-column: 4 / 8;
+    }
+  }
+
+  &__description {
+    font-size: 15px;
+    line-height: 140%;
+    text-align: center;
+    color: $colorText;
+
+    @include onTablet {
+      grid-row: 4 / 5;
+      text-align: left;
+    }
+
+    @include onTV {
+      grid-column: 1 / 2;
+    }
+  }
+
+  &__button {
+    margin-top: 12px;
+    grid-row: 6 / 7;
+  }
+
+  @include onTV {
+    grid-column: 1 / 2;
+  }
+}

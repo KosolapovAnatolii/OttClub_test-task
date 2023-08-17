@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTT Club</title>
+    <link rel="icon" href="images/Logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    >
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/main.scss">
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <div class="container">
+        <div class="grid grid--phone grid--tablet">
+          <a 
+            href="#" 
+            class="header__logo grid__item--1-1 grid__item--phone-1-1 grid__item--tablet-1-1"
+          >
+            <img
+              class="logo__image"
+              src="./images/Logo.png"
+              alt="OTTClub"
+            >
+          </a>
+
+          <div class="header__social grid__item--tablet-4-5 for-tablet">
+            <a 
+              href="https://web.telegram.org"
+            >
+              <img src="./images/Telegram.png" alt="Telegram">
+            </a>
+
+            <a 
+              href="https://www.facebook.com"
+            >
+              <img src="./images/Facebook.png" alt="Facebook">
+            </a>
+          </div>
+
+          <div class="header__auth grid__item--2-2 grid__item--phone-3-4 grid__item--tablet-5-8">
+            <a 
+              href="#"
+              class="header__auth--button for-tablet">
+              Регистрация
+            </a>
+
+            <a 
+              href="#"
+              class="header__auth--button"
+            >
+              Войти
+            </a>
+          </div>
+
+          <h1 class="header__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">Более 270 телеканалов в прямомэфире</h1>
+          <img 
+            src="./images/HeaderPicture.png" 
+            alt="main-picture" 
+            class="header__image grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8"
+          >
+          <p class="header__description grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+            Национальные, познавательные, детские, кино, спортивные, новостные и многие другие каналы
+          </p>
+          <a 
+            href="#" 
+            class="header__button button grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4"
+          >
+            Протестировать 7 дней бесплатно
+          </a>
+          <div class="header__benefits benefits for-tablet grid__item--tablet-1-7">
+            <ul class="benefits__list">
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Present.png" 
+                  alt="presents"
+                >
+                <span class="benefits__item--title">
+                  Бесплатный тест
+                </span>
+              </li>
+
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Gadgets.png" 
+                  alt="gadgets"
+                >
+                <span class="benefits__item--title">
+                  5 устройств = 1 подписка
+                </span>
+              </li>
+
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Archiv.png" 
+                  alt="archiv"
+                >
+                <span class="benefits__item--title">
+                  Архив трансляций
+                </span>
+              </li>
+
+              <li class="benefits__item">
+                <img 
+                  class="benefits__item--image" 
+                  src="./images/icons/Planet.png" 
+                  alt="planet"
+                >
+                <span class="benefits__item--title">
+                  Без привязки к месту
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <main>
+      <h1 class="page__title" hidden>OTT Club</h1>
+      <section class="page__section-connection">
+        <div class="container">
+          <div class="connection grid grid--phone grid--tablet">
+            <img 
+              src="./images/eye.png" 
+              alt="eye"
+              class="connection__image grid__item--1-2 grid__item--phone-2-3 grid__item--tablet-4-5"
+            >
+            <div class="connection__title grid__item--1-2 grid__item--phone-2-3 grid__item--tablet-2-4">
+              <div class="connection__price">
+                <img src="./images/1€.png" alt="1euro" class="connection__price--amount">
+                <span class="connection__price--month">
+                / месяц
+                </span>
+              </div>
+              <p class="connection__about">
+                Покупая подписку, более чем на 6 месяцев
+              </p>
+            </div>
+            <ul class="connection__achivs grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-7">
+              <li class="connection__item">
+                Более 270 каналов
+              </li>
+              <li class="connection__item">
+                127 FullHD каналов
+              </li>
+              <li class="connection__item">
+                Режим Ultra TV Sport
+              </li>
+              <li class="connection__item">
+                7 дней архива каналов
+              </li>
+              <li class="connection__item">
+                5 устройств = 1 подписка
+              </li>
+            </ul>
+            <from 
+              class="connection__form grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-2-7" 
+              action="#"
+              id="connection-form"
+            >
+              <input
+              name="email"
+              type="email"
+              placeholder="Email"
+              class="connection__input"
+              required
+              >
+              <button class="connection__button">
+                Подключить тариф
+              </button>
+            </from>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section-channels">
+        <div class="container">
+          <div class="channels grid grid--phone grid--tablet">
+            <h3 
+              class="channels__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3">
+              ТВ - каналы
+            </h3>
+            <span
+              class="channels__description grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-5"
+            >
+              Национальные, познавательные, детские, кино, спортивные, новостыне и многие другие каналы
+            </span>
+            <div class="channels__filter grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-8">
+              <button
+                class="channels__button"
+              >
+                Популярные
+              </button>
+              <button
+                class="channels__button"
+              >
+                Национальные
+              </button>
+              <button
+                class="channels__button for-tablet"
+              >
+                Познавательные
+              </button>
+              <button
+                class="channels__button for-tablet"
+              >
+                Кино
+              </button>
+              <button
+                class="channels__button for-tablet"
+              >
+                Спорт
+              </button>
+              <button
+                class="channels__button for-descktop"
+              >
+                Детские
+              </button>
+              <button
+                class="channels__button for-descktop"
+              >
+                Музыкальыне
+              </button>
+              <button
+                class="channels__button for-tv"
+              >
+                Новостные
+              </button>
+            </div>
+            <div class="channels__row grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-8">
+              <div class="channels__column">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/1+1.png" 
+                  alt="1+1">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/inter.png" 
+                  alt="inter"
+                >
+              </div>
+  
+              <div class="channels__column">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/zoom.png" 
+                  alt="zoom"
+                >
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/noviy.png" 
+                  alt="noviy"
+                >
+              </div>
+                
+              <div class="channels__column">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/ukraine.png" 
+                  alt="ukraine"
+                >
+                <img
+                  class="channels__item"
+                  src="./images/cards/ictv.png" 
+                  alt="ictv"
+                >
+              </div>
+  
+              <div class="channels__column for-tablet">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/film.png" 
+                  alt="e-film"
+                >
+  
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/m1.png" 
+                  alt="m1"
+                >
+              </div>
+  
+              <div class="channels__column for-descktop">
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/tet.png" 
+                  alt="tet"
+                >
+                <img 
+                  class="channels__item" 
+                  src="./images/cards/2+2.png" 
+                  alt="2+2"
+                >
+              </div>
+            </div>
+            <a href="#" class="channels__show-link grid__item--1-2 grid__item--phone-3-4 grid__item--tablet-7-8">
+              показать все
+              <img src="./images/arrow.svg" alt="show more channels">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section-devises">
+        <div class="container">
+          <div class="devises grid grid--phone grid--tablet">
+            <h3 
+              class="devises__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3"
+            >
+              Смотрите на разных устройствах
+            </h3>
+            <p 
+              class="devises__description grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3"
+            >
+              Подключите подписку FULL и смотрите любимые каналы на 5 устройствах, среди которых: телевизор, компьютер, планшет или смартфон
+            </p>
+            <img 
+              src="./images/Devices.png" 
+              alt="Devises" 
+              class="devises__image grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8"
+            >
+            <button class="devises__button button grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-3">
+              Протестировать 7 дней бесплатно
+            </button>
+            <div class="devises__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+              <img 
+                src="./images/devises/Lg.png" 
+                alt="LG" 
+                class="devises__item"
+              >
+
+              <img 
+                src="./images/devises/iOS.png"
+                alt="iOS"
+                class="devises__item"
+              >
+            </div>
+
+            <div class="devises__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8">
+              <img 
+                src="./images/devises/Android TV.png"
+                alt="Android"
+                class="devises__item"
+              >
+
+              <img 
+                src="./images/devises/Samsung.png"
+                alt="Samsung"
+                class="devises__item"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page__section-questions">
+        <div class="container">
+          <div class="questions grid grid--phone grid--tablet">
+            <h3 class="questions__title grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+              Популярные вопросы
+            </h3>
+            <div class="questions__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-4">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Как подключить подписку OTTCLUB или продлить её?
+                </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Как смотреть одновременно на разных устройствах?
+                </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Какая скорость соединения необходима для просмотра каналов?
+                </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider to-tablet">
+            </div>
+
+            <div class="questions__list grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8">
+              <div class="questions__item ">
+                <p class="questions__text">
+                  Как смотреть на телевизре Samsung?
+                </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">Как посмотреть передачу, которая была в эфире ранее?</p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider">
+              <div class="questions__item">
+                <p class="questions__text">
+                  Как работает бесплатный тестовый период?
+                </p>
+                <img 
+                  src="./images/down.png"
+                  alt="open-more"
+                  class="questions__arrow"
+                >
+              </div>
+              <hr class="questions__divider to-tablet">
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page__footer footer">
+      <div class="container">
+        <div class="grid grid--phone grid--tablet">
+          <div class="footer__about-first grid__item--1-2 grid__item--phone-1-2 grid__item--tablet-1-2">
+            <a href="#" class="footer__link">О нас</a>
+            <a href="#" class="footer__link">Пользовательское соглашение</a>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+            <a href="#" class="footer__link">ТВ каналам</a>
+          </div>
+
+          <div class="footer__about-second grid__item--1-2 grid__item--phone-3-4 grid__item--tablet-4-5">
+            <a href="#" class="footer__link">Проверка скорости</a>
+            <a href="#" class="footer__link">Правила оформления подписки</a>
+          </div>
+
+          <div class="footer__help grid__item--1-2 grid__item--phone-1-2 grid__item--tablet-6-8">
+            <h4 class="footer__help--title">Помощь</h4>
+            <span class="footer__help--contact">+442045772169 (Англия)</span>
+            <span class="footer__help--contact">+420255708953 (Европа)</span>
+            <span class="footer__help--contact">+97233751723 (Израиль)</span>
+            <span class="footer__help--contact">support@ottclub.cc</span>
+          </div>
+
+          <div class="footer__chat grid__item--1-2 grid__item--phone-3-4 grid__item--tablet-6-8">
+            <span class="footer__chat--title">Чат-поддержка</span>
+            <a href="#" class="footer__chan--link">
+              <img 
+                src="./images/messagers/logos_whatsapp.svg"
+                alt="whatsapp"
+              >
+            </a>
+            <a href="#" class="footer__chan--link">
+              <img
+                src="./images/messagers/logos_telegram.svg"
+                alt="telegram"
+              >
+            </a>
+          </div>
+          <div class="footer__payments grid-center grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-1-5">
+            <a href="#" class="footer__payments--link">
+              <img 
+                src="./images/payments/logos_visa.png"
+                alt="visa"
+              >
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img
+                src="./images/payments/master_card.png" alt="master-card">
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img
+                src="./images/payments/image640.png" 
+                alt="caska"
+              >
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img
+                src="./images/payments/373095 1.png"
+                alt="pay-sera"
+              >
+            </a>
+            <a href="#" class="footer__payments--link">
+              <img 
+                src="./images/payments/sepa.png" 
+                alt="sepa"
+              >
+            </a>
+          </div>
+          <div class="footer__company grid__item--1-2 grid__item--phone-1-4 grid__item--tablet-5-8">
+            <span>2021-2022 COMPANY NAME</span>
+            <span>Company number 1221514</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
